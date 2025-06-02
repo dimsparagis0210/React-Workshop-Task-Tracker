@@ -3,7 +3,7 @@ import './TaskItem.css';
 export const TaskItem = ({task, onToggleComplete, onDelete }) => {
     
     return (
-        <section className="task-item">
+        <section className={`task-item ${task.completed ? "completed" : ""}`}>
             <input 
                 type="checkbox" 
                 checked={task.completed}

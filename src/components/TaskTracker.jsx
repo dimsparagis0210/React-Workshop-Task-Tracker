@@ -17,6 +17,7 @@ export const TaskTracker = () => {
                 : task
         ));
     };
+    
     const onDelete = (id) => {
         setTasks(
             tasks.filter((task) => task.id !== id)
